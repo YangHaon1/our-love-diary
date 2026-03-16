@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>恋爱纪念 · 我们的故事</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="pre-enter">
+    <canvas id="hearts" aria-hidden="true"></canvas>
+    <div class="bg"></div>
+
+    <div class="intro" id="intro" aria-label="开场动画">
+      <div class="intro-card">
+        <div class="intro-title">给你一颗心 💗</div>
+        <div class="intro-subtitle">把今天和未来都交给你。</div>
+        <button class="btn btn-enter" id="enterBtn" type="button" disabled>
+          进入纪念页 ♡
+        </button>
+        <div class="intro-hint" id="enterHint">爱心生成中…</div>
+      </div>
+    </div>
+
+    <div class="app" id="app">
+      <header class="header">
+        <div class="header-inner">
+          <h1>恋爱纪念 💞</h1>
+          <div class="love-days" id="loveDays" aria-label="相恋天数">已相恋 0 天 💗</div>
+          <p class="subtitle" id="subtitle">从相遇那天起，心动就有了名字 ✨</p>
+
+          <div class="music-float" aria-label="右上角音乐">
+            <div class="music-float-inner">
+              <div class="music-float-title">情歌两三首-郭顶 🎵</div>
+              <button class="btn btn-music" id="musicBtn" type="button">播放 ♡</button>
+            </div>
+            <audio
+              id="bgm"
+              preload="metadata"
+              loop
+              src="https://music.163.com/song/media/outer/url?id=85578.mp3"
+            ></audio>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="card gallery" aria-label="照片轮播">
+          <div class="frame">
+            <img id="photo" alt="我们的照片" />
+            <div class="caption" id="caption"></div>
+          </div>
+
+          <div class="toolbar">
+            <button class="btn" id="prevBtn" type="button">上一张</button>
+            <button class="btn btn-secondary" id="toggleAutoBtn" type="button">暂停轮播</button>
+            <button class="btn" id="nextBtn" type="button">下一张</button>
+          </div>
+
+          <div class="dots" id="dots" aria-label="轮播分页"></div>
+        </section>
+
+        <section class="card story" aria-label="纪念文字">
+          <h2>写给你 💌</h2>
+          <p id="story1">
+            这一页想留给我们：一起走过的路、一起听过的歌、还有那些不经意却很温柔的瞬间。
+          </p>
+          <p id="story2">
+            未来也请多多指教。愿每个普通的日子，都因为你而闪闪发光。
+          </p>
+
+
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>只属于我们</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
